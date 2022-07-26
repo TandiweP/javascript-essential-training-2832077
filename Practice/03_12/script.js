@@ -7,12 +7,57 @@
  * - Test the objecs by calling their properties and using their methods in the console.
  */
 
-import Dog from "./Dog.js";
+import Book from "./Book.js";
 
-const Bowie = new Dog("Bowie", "Mini Schnauzer", "Liver Parti", true);
+const Carrie = new Book("Carrie", "Stephen King", "Horror", false, 290);
+console.log(Carrie);
+Carrie.pageCount();
 
-console.log(Bowie);
-Bowie.toggleWet();
+const JavaScriptForKids = new Book(
+  "JavaScript For Kids",
+  "Nick Morgan",
+  "nonfiction-web development",
+  false,
+  307
+);
+console.log(JavaScriptForKids);
+JavaScriptForKids.pageCount();
+
+const It = new Book("It", "Stephen King", "horror", false, 1142);
+console.log(It);
+It.pageCount();
+
+const ShadowHand = new Book(
+  "Babysitting Nightmares: The Shadow Hand",
+  "Kat Shepherd",
+  "Juv Horror",
+  false,
+  208
+);
+
+console.log(ShadowHand);
+ShadowHand.pageCount();
+
+const Pricking = new Book(
+  "By the Pricking of My Thumbs",
+  "Agatha Christie",
+  "Mystery",
+  false,
+  212
+);
+console.log(Pricking);
+Pricking.pageCount();
+
+// Keep track of how many books
+const bookList = Book.length;
+console.log("There are " + bookList + " book objects");
+
+// import Dog from "./Dog.js";
+
+// const Bowie = new Dog("Bowie", "Mini Schnauzer", "Liver Parti", true);
+
+// console.log(Bowie);
+// Bowie.toggleWet();
 
 // import Car from "./Car.js";
 // import Shoe from "./Shoe.js";
